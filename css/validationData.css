@@ -1,0 +1,286 @@
+
+    .p {
+        border: none;
+        background: none;
+    }
+
+    .p:hover {
+        color: green;
+        fill: green;
+    }
+
+    #tableFilter {
+        padding: 10px;
+        width: 30%
+    }
+
+    #tableFilter:focus,
+    select:focus {
+        outline: none;
+    }
+
+    .navi {
+        justify-content: flex-start;
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+        height: 43px;
+        position: fixed;
+        width: 92%;
+        background: whitesmoke;
+        z-index: 999;
+        top: 82px;
+    }
+
+    /* Apply some basic styling to the table */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    /* Style the table header */
+    th,
+    td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 12px;
+    }
+
+    th {
+        background-color: #3498db;
+        color: #ffffff;
+    }
+
+    /* Add some hover effect on table rows */
+    tr:hover {
+        background-color: white;
+    }
+
+    /* Style the last column differently, for example, add an icon */
+    td:last-child {
+        position: relative;
+        padding-right: 40px;
+    }
+
+    td:last-child::after {
+        content: "\2022";
+        /* Unicode for a bullet point or replace with an icon */
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        color: #27ae60;
+        font-size: 20px;
+    }
+
+    /* Make the table header fixed */
+    thead {
+        background-color: #3498db;
+        color: #ffffff;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+    /* Responsive table styling */
+    @media (max-width: 600px) {
+
+        th,
+        td {
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+
+    form {
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+    }
+
+    .continue button {
+        width: 100px;
+    }
+
+    #n,
+    #p {
+        border: none;
+        background: none;
+    }
+
+    #n:hover,
+    #p:hover {
+        fill: green;
+        color: green;
+    }
+
+    #approvalStatus {
+        width: 100px;
+        text-align: center;
+        border: none;
+        border-bottom: 2px solid rgb(225, 0, 0, 0.5);
+        font-weight: bold;
+
+    }
+
+    .updateStat {
+        justify-content: flex-start;
+        align-items: stretch;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid rgb(0, 0, 0, 0.2);
+        height: 40px;
+        background: white;
+        padding-left: 10px;
+    }
+
+    label {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .s {
+        border: none;
+        background: none;
+    }
+
+    .s:hover {
+        background: #1ABC9C;
+        color: white;
+    }
+
+
+    .p {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #back {
+        margin-left: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media print {
+
+        /* Hide unnecessary elements */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Additional styling as needed */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            page-break-after: avoid;
+        }
+
+        .head {
+            display: none;
+        }
+
+        .navi {
+            display: none;
+        }
+
+        .sidebar {
+            display: none;
+        }
+
+        .desktop-nav,
+        .mobile-menu,
+        .mobile,
+        #c {
+            display: none;
+        }
+
+        #edit {
+            display: none;
+        }
+    }
+
+    .photo-noti {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    td {
+        position: relative;
+    }
+
+    .table-container a {
+        text-decoration: none;
+    }
+
+    .table-container {
+        overflow: hidden;
+        width: 100%;
+
+    }
+
+    .container {
+        overflow-y: auto;
+        height: 83vh;
+    }
+
+    body {
+        overflow: hidden;
+        padding-bottom: 100px;
+    }
+
+    table {
+        overflow-y: auto;
+        position: absolute;
+        width: 98%;
+    }
+
+    th {
+        position: relative;
+    }
+
+    .rn {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        font-size: 10px;
+        font-weight: 100;
+    }

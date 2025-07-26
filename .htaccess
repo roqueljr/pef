@@ -1,0 +1,24 @@
+SetEnv ROOT_DIR /home/pefcarbo
+SetEnv GCID 589997116797-uad1h0a0g7r1scoks561iteja0oin4p0.apps.googleusercontent.com
+SetEnv GCS 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
+
+#php_value display_errors On
+#php_value mbstring.http_input auto
+#php_value date.timezone Asia/Manila
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+# Clean URLs for MVC-style routing
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+Options -Indexes
